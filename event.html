@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Share Your Event</title>
+      <link rel="stylesheet" type="text/css" href="styleevent.css">
+  </head>
+  <body>
+      <header>
+            <div class="main">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="donation.html">DONATION</a></li>
+                    <li><a href="signup.html">VOLUNTEER REGISTRATION</a></li>
+                    <li class="active"><a href="list.html">ORPHANAGE-LIST</a></li>
+                    <li><a href="login.html">ADMIN</a></li>
+                </ul>
+            </div>
+      </header>
+      <h1>Share your Event</h1>
+      <div class="event">
+          <form action="event.php" method="post" >
+              <p><label>Name:</label></p>
+              <input type="text" name="fname"  placeholder="EnterName" required>
+              <p><label>Mobile Number:</label><br></p>
+              <input type="text" name="mnum"  placeholder="Enter MobileNumber" pattern="[6789][0-9]{9}" required>
+              <p><label>Aadhar Number:</label></p>
+              <input type="text" name="anum"  placeholder="Enter AadharNumber"  pattern="[0-9]{12}"required>
+              <p><label>Address:</label></p>
+              <input type="text" name="address" placeholder="Enter Address" required>
+              <p><label>Event Date:</label></p>
+              <input type="date" name="date"  placeholder="Enter Date" required>
+               <p><label>Event Name:</label></p>
+              <input type="text" name="enum" placeholder="EnterEvent Name" required>
+              <p>Enter Orphanage Name<select name="orphanname" required > 
+                 <option>select any orphanage</option>
+                <option value="Touch Orphanage">Touch Orphanage</option>
+               <option value="Indian red cross society">Indian red cross society</option>
+                <option value="Government Blind School">Government Blind School</option>
+                <option value="Sandeepani Avasam Orphan">Sandeepani Avasam Orphan</option>  
+                </select></p>
+               <p><label>Event Time:</label></p>
+              <input type="text" name="etime" placeholder="Morning/Afternoon/Night" required>
+               <p><label>Food Service:</label></p>
+              <input type="text" name="service" placeholder="Self/Orphanage" required>
+              <p><input type="submit" value="submit"></p>
+          </form>
+      </div>
+  </body>
+</html>  

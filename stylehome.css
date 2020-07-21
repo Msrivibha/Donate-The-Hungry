@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:century Gothic;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pic1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top:25px;
+}
+ul li{
+    display:inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border:1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.main li.active a{
+     border-bottom: 2px solid white;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    font-style:italic;
+    color: #fff;
+    font-size: 60px;
+}
+
+.sub{
+    position: absolute;
+    top:40%;
+    left:45%;
+    transform: translate(-50%,-50%);
+}
+
+.sub h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+.place{
+    position: absolute;
+    top:47%;
+    left:56%;
+    transform: translate(-50%,-50%);
+}
+
+.place h1{
+    color: #fff;
+    font-size: 40px;
+}
+
+.button{
+    position: absolute;
+    top:60%;
+    left:51%;
+    transform: translate(-50%,-50%);
+}
+
+.contact{
+    text-decoration: underline;
+    position: absolute;
+    left: 5%;
+    color: #fff;
+    bottom:12%;
+}
+
+.mail{
+     position: absolute;
+    left: 5%;
+    color: #fff;
+    bottom: 8%;
+}
+
+.number{
+     position: absolute;
+    left: 5%;
+    color: #fff;
+    bottom: 5%;
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
